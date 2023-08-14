@@ -1,8 +1,8 @@
-function Work() {
+function Portfolio() {
   return (
-    <div className="work">
+    <div className="portfolio">
       <section className="container">
-        <h1 className="header">Work</h1>
+        <h1 className="header">Portfolio</h1>
         <p id="text">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam ex
           sit quis placeat! Autem beatae corrupti, quibusdam magni vero,
@@ -20,4 +20,4 @@ function Work() {
     </div>
   );
 }
-export default Work;
+export default Portfolio;

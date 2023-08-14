@@ -1,7 +1,7 @@
 import Header from "./Components/Header"
 import About from "./Components/About"
 import Footer from "./Components/Footer"
-// import Work from "./Components/Work"
+import Portfolio from "./Components/Portfolio"
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <Header/>
       <About/>
-      {/* <Work/> */}
+      <Portfolio/>
       <Footer/>
     </div>
   );
