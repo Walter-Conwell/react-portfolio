@@ -3,6 +3,7 @@ function Portfolio() {
     <div className="Portfolio">
       <section className="container">
         <h1 className="header">Portfolio</h1>
+        <div id="text">
         <p id="text">
           Code-nundrum - codeQuizGame
           GitHub repo Link:
@@ -31,6 +32,7 @@ function Portfolio() {
           <img src="./assets/images/work2.png" alt="workexperience2" />
           <img src="./assets/images/work3.png" alt="workexperience3" />
         </aside>
+        </div>
       </section>
     </div>
   );

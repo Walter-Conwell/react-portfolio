@@ -66,20 +66,7 @@ section.container {
   flex: 1 0 33%;
   
 }
-nav > ul > li {
-  list-style: none;
-  font-size: 20px;
-  height: 25px;
-  box-sizing: content-box;
-  justify-content: center;
-  text-align: right;
-  background-color: #FFA69E;
-  padding: 7px;
-  /* color: black; */
-  border-color: #D33E43;
-  /*colors of border/background are easy to differentiate from the text color*/
-  border-style: solid;
-}
+
 
 .header {
 
@@ -122,6 +109,11 @@ body {
 #Footer {
   font-size: 20px;
 display: block;
+}
+
+.Portfolio {
+  text-align: center;
+  min-width: max-content;
 }
 
 #text {
