@@ -1,7 +1,7 @@
 import Header from "./Components/Header"
 import About from "./Components/About"
-import Contact from "./Components/Contact"
-import Work from "./Components/Work"
+import Footer from "./Components/Footer"
+// import Work from "./Components/Work"
 import './App.css';
 
 function App() {
@@ -9,8 +9,8 @@ function App() {
     <div className="App">
       <Header/>
       <About/>
-      <Work/>
-      <Contact/>
+      {/* <Work/> */}
+      <Footer/>
     </div>
   );
 }

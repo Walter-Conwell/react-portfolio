@@ -46,12 +46,13 @@
 
 .container {
   border-color: white;
+  border-radius: auto;
   display: flex;
   flex-direction: right;
   justify-content: right;
   /*aligns content of the nav on the right side of the container*/
   text-align: left;
-  font-size: 25px;
+  font-size: 12px;
 }
 section.container {
 
@@ -67,8 +68,9 @@ section.container {
 }
 nav > ul > li {
   list-style: none;
-  font-size: 30px;
+  font-size: 20px;
   height: 25px;
+  box-sizing: content-box;
   justify-content: center;
   text-align: right;
   background-color: #FFA69E;
@@ -82,13 +84,15 @@ nav > ul > li {
 .header {
 
   font-size: 30px;
-  height: 25px;
+  height: auto;
+  text-align: center;
   color: #343434;
-  border-style: double;
+  border-style: groove;
   border-color: #D33E43;
+  border-radius: 12;
   background-color: #FFA69E;
-  padding: 7px;
-  width: fit-content;
+  padding: 10px;
+  width: auto;
 }
 
 body {
@@ -102,7 +106,7 @@ body {
   border-color: white;
 }
 
-#Contact {
+#Footer {
   font-size: 20px;
 display: block;
 }
