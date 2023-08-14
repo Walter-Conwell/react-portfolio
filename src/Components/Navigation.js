@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Portfolio from './Portfolio';
-import Footer from './Footer';
+import Contact from './Contact';
 
 function Navigation() {
   return (
@@ -17,11 +17,12 @@ function Navigation() {
             {/* <Nav.Link href="#Portfolio">Portfolio</Nav.Link> */}
             {/* <Nav.Link href="#link">Link</Nav.Link> */}
             <NavDropdown title="Explore" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#Footer">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="#Contact">Contact</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
-              <NavDropdown.Item href="Portfolio">Portfolio</NavDropdown.Item>
+              {/* below, portfolio link is working! */}
+              <NavDropdown.Item href="./Portfolio">Portfolio</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
                 Separated link

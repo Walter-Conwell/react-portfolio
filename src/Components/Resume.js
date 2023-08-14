@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import Navigation from "./Components/Navigation";
 // import Header from "./Components/Header"
 // import About from "./Components/About"
@@ -13,8 +13,8 @@ function Resume() {
       <div>
         <section className="Resume">
           <h1 className="header">Resume</h1>
-          <p id="text">walterdanteconwelljr@gmail.com</p>
-          <p id="text">Github Profile: https://github.com/Walter-Conwell</p>
+          <p id="text">work experience</p>
+          <p id="text">Links</p>
         </section>
         <form>lorem</form>
       </div>

@@ -6,7 +6,7 @@ import Navigation from "./Components/Navigation";
 import About from "./Components/About"
 import Portfolio from "./Components/Portfolio";
 import Resume from "./Components/Resume";
-import Footer from "./Components/Footer";
+import Footer from "./Components/Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 

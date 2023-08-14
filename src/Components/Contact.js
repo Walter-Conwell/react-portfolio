@@ -1,8 +1,8 @@
 import React from "react";
-function Footer() {
+function Contact() {
   return (
     <div>
-      <section className="Footer">
+      <section className="Contact">
         <h1 className="header">Contact</h1>
         <p id="text">walterdanteconwelljr@gmail.com</p>
         <p id="text">Github Profile: https://github.com/Walter-Conwell</p>
@@ -11,4 +11,4 @@ function Footer() {
     </div>
   );
 }
-export default Footer;
+export default Contact;
