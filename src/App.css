@@ -69,7 +69,6 @@ section.container {
 
 
 .header {
-
   font-size: 30px;
   height: auto;
   text-align: center;
@@ -113,7 +112,9 @@ display: block;
 
 .Portfolio {
   text-align: center;
-  min-width: max-content;
+  min-width: auto;
+  max-width: fit-content;
+  max-width: -moz-fit-content;
 }
 
 #text {

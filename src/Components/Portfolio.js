@@ -1,31 +1,31 @@
 function Portfolio() {
   return (
     <div className="Portfolio">
-      <section className="container">
+      <section>
         <h1 className="header">Portfolio</h1>
         <div id="text">
-        <p id="text">
+        <p>
           Code-nundrum - codeQuizGame
-          GitHub repo Link:
-          Live deployment link:
+          GitHub repo Link: https://github.com/Walter-Conwell?tab=repositories
+          Live deployment link: https://github.com/Walter-Conwell?tab=repositories
           <img src="./assets/images/work1.png" alt="workexperience1" />
         </p>
-        <p id="text">
+        <p>
           Code-nundrum - codeQuizGame
-          GitHub repo Link:
-          Live deployment link:
+          GitHub repo Link: https://github.com/Walter-Conwell?tab=repositories
+          Live deployment link: https://github.com/Walter-Conwell?tab=repositories
           <img src="./assets/images/work1.png" alt="workexperience1" />
         </p>
-        <p id="text">
+        <p>
           Code-nundrum - codeQuizGame
-          GitHub repo Link:
-          Live deployment link:
+          GitHub repo Link: https://github.com/Walter-Conwell?tab=repositories
+          Live deployment link: https://github.com/Walter-Conwell?tab=repositories
           <img src="./assets/images/work1.png" alt="workexperience1" />
         </p>
-        <p id="text">
+        <p>
           Code-nundrum - codeQuizGame
-          GitHub repo Link:
-          Live deployment link:
+          GitHub repo Link: https://github.com/Walter-Conwell?tab=repositories
+          Live deployment link: https://github.com/Walter-Conwell?tab=repositories
           <img src="./assets/images/work1.png" alt="workexperience1" />
         </p>
         <aside id="aside">
