@@ -1,9 +1,10 @@
-import Nav from "./Nav";
+import Navigation from "./Navigation";
+import Nav from "./Navigation";
 
 function Header() {
   return (
     <div>
-      <Nav />
+      <Navigation />
     </div>
   );
 }

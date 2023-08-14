@@ -1,3 +1,4 @@
+
 function About() {
   return (
     <div>
@@ -13,7 +14,8 @@ function About() {
           Now through intense perserverance and love of the craft, I'm a Full Stack Web Dev!
           While I lean towards UI, I am always eager to work on backend projects as well.
           I am very excited for the future oppurtunities and experiences that await!
-          Check out my work!
+          Check out my
+          
           Or if you would like to reach out, Contact me!
         </p>
       </section>
