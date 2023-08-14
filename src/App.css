@@ -103,7 +103,7 @@ nav > ul > li {
   border-style: groove;
   border-color: #D33E43;
   border-radius: 12;
-  background-color: #FFA69E;
+  /* background-color: #FFA69E; */
   padding: 10px;
   width: auto;
 }

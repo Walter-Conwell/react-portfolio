@@ -1,6 +1,6 @@
 function Portfolio() {
   return (
-    <div className="portfolio">
+    <div className="Portfolio">
       <section className="container">
         <h1 className="header">Portfolio</h1>
         <p id="text">
