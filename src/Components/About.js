@@ -3,7 +3,7 @@ function About() {
   return (
     <div>
       <section id="About">
-        <h1 className="header">About</h1>
+        <h1 className="header bg=dkblue">About</h1>
         <p id="text">
           Hello! My name is Walter Conwell Jr. I'm a recent graduate of the Edx Full Stack Web Development Bootcamp at the University of Denver.
           I've always been fascinated by the programming.
