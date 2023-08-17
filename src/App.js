@@ -6,10 +6,10 @@ import Navigation from "./Components/Navigation";
 import About from "./Components/About";
 import Portfolio from "./Components/Portfolio";
 import Resume from "./Components/Resume";
-import Footer from "./Components/Contact";
+import Footer from "./Components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Contact from "./Components/Contact";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Route path="/react-portfolio" element={<About />} />
           <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/Resume" element={<Resume />} />
-          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Footer" element={<Footer />} />
         </Routes>
       </Router>
     </div>

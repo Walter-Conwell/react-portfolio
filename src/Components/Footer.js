@@ -1,6 +1,6 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
-function Contact() {
+function Footer() {
   return (
     <div>
       <section className="Contact">
@@ -19,4 +19,4 @@ function Contact() {
     </div>
   );
 }
-export default Contact;
+export default Footer;
