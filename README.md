@@ -1,12 +1,18 @@
-# React Portfolio 
+# React Portfolio
 
 ## Description
 
 My portfolio made with React.
 Included technologies are:
+
 - react
 - react-bootstrap
 - bootstrap
+
+## Screenshots
+
+![about](./image.png)
+![Portfolio](./image-1.png)
 
 ## Table of Contents
 
@@ -17,11 +23,11 @@ Included technologies are:
 
 ## Usage
 
-create a logo with this svg logo generator.
+My React Portfolio!
 
 ## License
 
-n/a
+MIT
 
 ## Contributors
 
