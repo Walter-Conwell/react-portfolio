@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  min-width: auto;
+  max-width: auto;
+  width: 90vw;
 }
 
 .App-logo {
@@ -51,6 +54,7 @@
   justify-content: right;
   /*aligns content of the nav on the right side of the container*/
   text-align: left;
+  max-width: 80vw;
   font-size: 12px;
 }
 section.container {
@@ -104,20 +108,21 @@ body {
 #Footer {
   font-size: 20px;
   display: block;
+  max-width: 80vw;
 }
 
 .Portfolio {
   text-align: center;
   min-width: auto;
-  max-width: fit-content;
-  max-width: -moz-fit-content;
+  max-width: auto;
+  width: 80vw;
 }
 
 .Footer {
   text-align: center;
   min-width: auto;
-  max-width: fit-content;
-  max-width: -moz-fit-content;
+  max-width: auto;
+  width: 80vw;
 }
 
 #text {

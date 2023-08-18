@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div>
+    <div className="Container">
       <section id="About">
         <h1 className="header bg=dkblue">About</h1>
         <p id="text">
