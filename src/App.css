@@ -2,7 +2,7 @@
   text-align: center;
   min-width: auto;
   max-width: auto;
-  width: 90vw;
+  align-items: center;
 }
 
 .App-logo {
@@ -54,7 +54,7 @@
   justify-content: right;
   /*aligns content of the nav on the right side of the container*/
   text-align: left;
-  max-width: 80vw;
+  max-width: 90vw;
   font-size: 12px;
 }
 section.container {
@@ -69,6 +69,7 @@ section.container {
 }
 
 .header {
+  width: 90vw;
   font-size: 30px;
   height: auto;
   text-align: center;
@@ -91,7 +92,7 @@ section.container {
   border-radius: 12;
   /* background-color: #FFA69E; */
   padding: 10px;
-  width: auto;
+  width: 90vw;
 }
 
 body {
@@ -101,28 +102,33 @@ body {
   justify-content: left;
   padding: 10px;
   margin: 2%;
+  max-width: fit-content;
   border-style: solid;
   border-color: white;
 }
 
 #Footer {
   font-size: 20px;
-  display: block;
-  max-width: 80vw;
+  display: inline;
+  width: 90vw;
+  justify-content: center;
 }
 
 .Portfolio {
+  display: flex;
   text-align: center;
-  min-width: auto;
-  max-width: auto;
-  width: 80vw;
+  align-items: center;
+  width: 90vw;
 }
 
 .Footer {
   text-align: center;
-  min-width: auto;
-  max-width: auto;
-  width: 80vw;
+  width: 90vw;
+}
+
+.form {
+  text-align: center;
+  width: 90vw;
 }
 
 #text {
@@ -134,9 +140,13 @@ body {
   font-size: 16px;
 }
 
+.image {
+  align-items: right;
+}
+
 @media screen and (max-width: 992px) {
   body {
-    background-color: #d33e43;
+    background-color: #3c896d;
     color: #343434;
   }
 }
