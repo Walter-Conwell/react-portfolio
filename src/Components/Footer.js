@@ -1,10 +1,11 @@
 import React from "react";
 import Form from "react-bootstrap/Form";
+
 function Footer() {
   return (
-    <div>
-      <section className="Contact">
-        <h1 className="header bg=dkblue">Contact</h1>
+    <div className="Footer">
+      <section id="Footer" className="Footer">
+        <h1 className="header">Contact</h1>
         <Form>
           <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
             <Form.Label>Email address</Form.Label>
