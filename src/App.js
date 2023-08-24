@@ -16,11 +16,11 @@ function App() {
     <div className="App">
       <HashRouter>
         <Navigation />
-        <Route path="/" element={<About />} />
-          <Route path="/Portfolio" element={<Portfolio />} />
-          <Route path="/Resume" element={<Resume />} />
-          <Route path="/Footer" element={<Footer />} />
         <Routes>
+        <Route path="/#" element={<About />} />
+          <Route path="/#/Portfolio" element={<Portfolio />} />
+          <Route path="/#/Resume" element={<Resume />} />
+          <Route path="/#/Footer" element={<Footer />} />
         </Routes>
       </HashRouter>
     </div>
