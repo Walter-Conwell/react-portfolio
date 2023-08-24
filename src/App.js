@@ -17,9 +17,12 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/react-portfolio" element={<About />} />
-          <Route path="/Portfolio" element={<Portfolio />} />
+          {/* <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/Resume" element={<Resume />} />
-          <Route path="/Footer" element={<Footer />} />
+          <Route path="/Footer" element={<Footer />} /> */}
+          <Portfolio />
+          <Resume />
+          <Footer />
         </Routes>
       </Router>
     </div>
