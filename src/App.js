@@ -16,10 +16,10 @@ function App() {
       <Router>
         <Navigation />
         <Routes>
-          <Route path="./react-portfolio" element={<About />} />
-          <Route path="./react-portfolio/Portfolio" element={<Portfolio />} />
-          <Route path="./react-portfolio/Resume" element={<Resume />} />
-          <Route path="./react-portfolio/Footer" element={<Footer />} />
+          <Route path="/react-portfolio" element={<About />} />
+          <Route path="react-portfolio/Portfolio" element={<Portfolio />} />
+          <Route path="react-portfolio/Resume" element={<Resume />} />
+          <Route path="react-portfolio/Footer" element={<Footer />} />
         </Routes>
       </Router>
     </div>
