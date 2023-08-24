@@ -1,22 +1,39 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Navbar from 'react-bootstrap/Navbar';
 import Project from "./Project";
 
-function Portfolio() {
-  return (
-    <Navbar className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand href="#Project">Project</Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            live Link <a href="#login">Test</a>
-          </Navbar.Text>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
+  const Portfolio = () => {
+    const projects = [
+      {
+        title: 'Project 1',
+        description: 'Description of Project 1',
+        imageUrl: 'image-url-1',
+        projectUrl: 'project-url-1'
+      }
+      // {
+      //   title: 'Project 2',
+      //   description: 'Description of Project 2',
+      //   imageUrl: 'image-url-2',
+      //   projectUrl: 'project-url-2'
+      // },
+    ];
+  
+    return (
+      <div className="container">
+        <h2>My Portfolio</h2>
+        <div className="row">
+          {projects.map((project, index) => (
+            <div key={index} className="col-md-4 mb-4">
+              <Project
+                title={project.title}
+                description={project.description}
+                imageUrl={project.imageUrl}
+                projectUrl={project.projectUrl}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    );
 }
 
 export default Portfolio;
