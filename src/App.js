@@ -13,8 +13,8 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Navigation />
       <Router>
+        <Navigation />
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/Portfolio" element={<Portfolio />} />
