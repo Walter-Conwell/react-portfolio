@@ -17,13 +17,13 @@ function Navigation() {
             {/* <Nav.Link href="#Portfolio">Portfolio</Nav.Link> */}
             {/* <Nav.Link href="#link">Link</Nav.Link> */}
             <NavDropdown title="Explore" id="basic-nav-dropdown">
-              <NavDropdown.Item href="./Footer">Contact</NavDropdown.Item>
-              <NavDropdown.Item href="./Resume">Resume</NavDropdown.Item>
+              <NavDropdown.Item href="/Footer">Contact</NavDropdown.Item>
+              <NavDropdown.Item href="/Resume">Resume</NavDropdown.Item>
               {/* below, portfolio link is working! */}
-              <NavDropdown.Item href="./Portfolio">Portfolio</NavDropdown.Item>
+              <NavDropdown.Item href="/Portfolio">Portfolio</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4">
-                Separated link
+                Download Resume
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
