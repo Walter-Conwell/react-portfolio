@@ -37,5 +37,6 @@ Jacob Carver
 
 ## Questions
 
-github username: Walter-Conwell
-email: walterdanteconwelljr@gmail.com
+- github username: Walter-Conwell
+- email: walterdanteconwelljr@gmail.com
+- gh pages deployment: https://walter-conwell.github.io/react-portfolio/
