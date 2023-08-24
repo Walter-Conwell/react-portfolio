@@ -13,16 +13,12 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <Router>
         <Navigation />
+      <Router>
         <Routes>
-          <Route path="/react-portfolio" element={<About />} />
-          {/* <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/" element={<About />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/Resume" element={<Resume />} />
-          <Route path="/Footer" element={<Footer />} /> */}
-          <Portfolio />
-          <Resume />
-          <Footer />
         </Routes>
       </Router>
     </div>
