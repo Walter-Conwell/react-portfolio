@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card } from "react-bootstrap";
+
 // import { Col, Container, Image, Row } from 'react-bootstrap';
 // import Container from 'react-bootstrap/Container';
 // import Image from 'react-bootstrap/Image';
@@ -10,17 +10,6 @@ function About() {
     <div className="Container">
       <section id="About">
         <h1 className="header bg-dkblue">About</h1>
-        <Card>
-        <Card.Img variant="top" src={"https://github.com/Walter-Conwell/codeQuizGame/raw/main/Develop/assets/images/image-1.png"} />
-        <Card.Body>
-          <Card.Title>{"Codenundrum"}</Card.Title>
-          <Card.Text>{"Test your skills in a multiple-choice Javascript quiz!"}</Card.Text>
-          <a href={"https://github.com/Walter-Conwell/codeQuizGame"} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
-            View Project
-          </a>
-          <a href={"https://walter-conwell.github.io/codeQuizGame/"} className="btn btn-primary" target="_blank" rel="noopener noreferrer" >Live Link</a>
-        </Card.Body>
-      </Card>
         <p id="text">
           Hello! My name is Walter Conwell Jr. I'm a recent graduate of the Edx
           Full Stack Web Development Bootcamp at the University of Denver. I've
