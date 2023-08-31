@@ -54,7 +54,7 @@
   justify-content: right;
   /*aligns content of the nav on the right side of the container*/
   text-align: left;
-  max-width: 90vw;
+  max-width: 90%;
   font-size: 12px;
 }
 section.container {
@@ -63,6 +63,9 @@ section.container {
   text-align: left;
 }
 
+.resumeContainer {
+  width: 90vw;
+}
 #aside {
   display: flex;
   flex: 1 0 33%;
@@ -171,7 +174,7 @@ body {
 
 @media screen and (max-width: 992px) {
   body {
-    background-color: #3c896d;
+    background-color: #5bd475;
     color: #343434;
   }
 }
