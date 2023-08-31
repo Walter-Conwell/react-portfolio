@@ -14,9 +14,9 @@ function Resume() {
       <section className="Resume">
         <h1 className="header">Resume</h1>
         <p id="text">To be added</p>
-        <p id="text">Links</p>
+        {/* link pdf for resume display */}
       </section>
-      <form>lorem</form>
+      <button className="btn btn-primary">Download</button>
     </div>
   );
 }

@@ -92,7 +92,7 @@ section.container {
   border-radius: 12;
   /* background-color: #FFA69E; */
   padding: 10px;
-  width: 90vw;
+  width: fluid;
 }
 
 .btn {
@@ -152,6 +152,22 @@ body {
 .image {
   align-items: right;
 }
+
+.CardAbout {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+  width: -moz-fit-content;
+  height: fit-content;
+  height: -moz-fit-content;
+  object-fit: cover;
+  align-items: center;
+  /* centers card element */
+  margin: 0 auto;
+  border-style: solid;
+  border-color: #d33e43;
+}
+
 
 @media screen and (max-width: 992px) {
   body {
