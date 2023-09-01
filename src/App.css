@@ -62,6 +62,9 @@ section.container {
   padding: 7px;
   text-align: left;
 }
+.icon {
+  justify-content: center;
+}
 
 .resumeContainer {
   width: 90vw;
