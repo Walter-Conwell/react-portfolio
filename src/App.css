@@ -57,11 +57,13 @@
   max-width: 90%;
   font-size: 12px;
 }
+
 section.container {
   display: block;
   padding: 7px;
   text-align: left;
 }
+
 .icon {
   justify-content: center;
 }
@@ -177,8 +179,8 @@ body {
 
 @media screen and (max-width: 992px) {
   body {
-    background-color: #5bd475;
-    color: #343434;
+    background-color: goldenrod;
+    color: white;
   }
 }
 

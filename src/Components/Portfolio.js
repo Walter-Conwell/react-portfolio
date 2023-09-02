@@ -18,9 +18,10 @@ import Project from "./Project";
     ];
   
     return (
-      <div className="container">
-        <h2>My Portfolio</h2>
-        <div className="row">
+      <div className="container" style={{ marginTop: "10px" }}>
+        <h2 style={{ marginLeft: "10px" }}>My Portfolio</h2>
+        
+        <div className="row" style={{ width: "auto", display: "flex" }}>
           {projects.map((project, index) => (
             <div key={index} className="col-md-4 mb-4">
               <Project

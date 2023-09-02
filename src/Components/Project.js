@@ -1,10 +1,11 @@
 import React from "react";
-import { Card } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 
 const Project = ({ imageUrl, title, description, projectUrl }) => {
     return (
-        <div>
-            <section>
+        <div style={{ display: "flex", flexWrap: "wrap" }}>
+          <br />
+            <section style={{ margin: "10px", minwidth: "180px" }}>
         <Card>
         <Card.Img variant="top" src={"https://github.com/Walter-Conwell/codeQuizGame/raw/main/Develop/assets/images/image-1.png"} />
         <Card.Body>
@@ -17,7 +18,8 @@ const Project = ({ imageUrl, title, description, projectUrl }) => {
         </Card.Body>
       </Card>
             </section>
-            <section>
+            <br />
+            <section style={{ margin: "10px" }}>
             <Card>
         <Card.Img variant="top" src={"https://github.com/Walter-Conwell/parentSchedulingApp/raw/main/screenshot.png"} />
         <Card.Body>
@@ -30,7 +32,7 @@ const Project = ({ imageUrl, title, description, projectUrl }) => {
         </Card.Body>
       </Card>
             </section>
-            <section>
+            <section style={{ margin: "10px" }}>
             <Card>
         <Card.Img variant="top" src={"https://raw.githubusercontent.com/Walter-Conwell/noteTaker/main/public/assets/images/image.png"} />
         <Card.Body>
@@ -43,7 +45,8 @@ const Project = ({ imageUrl, title, description, projectUrl }) => {
         </Card.Body>
       </Card>
             </section>
-            <section>
+            <br />
+            <section style={{ margin: "10px" }}>
             <Card>
         <Card.Img variant="top" src={"https://github.com/Walter-Conwell/svgLogoMaker/assets/131832544/2d7fd6c4-4d4f-4ba6-be53-b8c3a4cade6f"} />
         <Card.Body>
@@ -56,7 +59,8 @@ const Project = ({ imageUrl, title, description, projectUrl }) => {
         </Card.Body>
       </Card>
             </section>
-            <section>
+            <br />
+            <section style={{ margin: "10px" }}>
             <Card>
         <Card.Img variant="top" src={"https://raw.githubusercontent.com/Walter-Conwell/jsPasswordGenerator/main/assets/images/image-2.png"} />
         <Card.Body>
@@ -69,7 +73,8 @@ const Project = ({ imageUrl, title, description, projectUrl }) => {
         </Card.Body>
       </Card>
             </section>
-            <section>
+            <br />
+            <section style={{ margin: "10px" }}>
             <Card>
         <Card.Img variant="top" src={"https://user-images.githubusercontent.com/131832544/260524868-6ce7e916-fb5b-4169-b400-7edf55b6e4ac.png"} />
         <Card.Body>

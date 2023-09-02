@@ -29,10 +29,6 @@ function Navigation() {
               <NavDropdown.Item href="/react-portfolio/#/Portfolio">
                 Portfolio
               </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Download Resume
-              </NavDropdown.Item>
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
