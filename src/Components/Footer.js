@@ -18,7 +18,7 @@ function Footer() {
 
     const sendEmail = (e) => {
       e.preventDefault();
-      emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAIL_USER_ID)
+      emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_USER_ID)
         .then((result) => {
           console.log('Email sent successfully:', result);
           // Add logic for displaying a success message to the user
@@ -51,11 +51,11 @@ function Footer() {
           <Form className="form" ref={form} onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="firstName lastName" name="user_name" value={formData.user_name} onChange={handleChange} />
+              <Form.Control type="text" placeholder="firstName lastName" name="name" value={formData.name} onChange={handleChange} />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="text" placeholder="name@example.com" name="user_email" value={formData.user_email} onChange={handleChange}/>
+              <Form.Control type="text" placeholder="name@example.com" name="email" value={formData.email} onChange={handleChange}/>
             </Form.Group>
             <Form.Group
               className="mb-3"
