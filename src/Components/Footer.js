@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useState, useRef } from "react";
+import emailjs from '@emailjs/browser';
 import Form from "react-bootstrap/Form";
 import Container from "react-bootstrap/Container";
+import { Button } from "react-bootstrap";
+
+const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+const userId = process.env.REACT_APP_EMAILJS_USER_ID;
 
 function Footer() {
+    const [formData, setFormData] = useState({
+      name: '',
+      email: '',
+      message: '',
+    });
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+      emailjs.sendForm(process.env.REACT_APP_EMAIL_SERVICE_ID, process.env.REACT_APP_EMAIL_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAIL_USER_ID)
+        .then((result) => {
+          console.log('Email sent successfully:', result);
+          // Add logic for displaying a success message to the user
+        })
+        .catch((error) => {
+          console.error('Email sending failed:', error);
+          
+        });
+    };
+  
+    const handleChange = (e) => {
+      const { name, value } = e.target;
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    };
+
   return (
     <div className="Footer">
       <section id="Footer" className="Footer">
@@ -14,22 +48,23 @@ function Footer() {
           </p>
 
         <Container>
-          <Form className="form">
+          <Form className="form" ref={form} onSubmit={sendEmail}>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Name</Form.Label>
-              <Form.Control type="email" placeholder="firstName lastName" />
+              <Form.Control type="text" placeholder="firstName lastName" name="user_name" value={formData.user_name} onChange={handleChange} />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="name@example.com" />
+              <Form.Control type="text" placeholder="name@example.com" name="user_email" value={formData.user_email} onChange={handleChange}/>
             </Form.Group>
             <Form.Group
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
             >
               <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={3} />
+              <Form.Control as="textarea" rows={3} name="message" value={formData.message} onChange={handleChange} />
             </Form.Group>
+            <Button className="btn btn-primary" style={{ backgroundColor: "#5bd475" }} type="submit">Submit</Button>
           </Form>
         </Container>
         <br />
@@ -48,4 +83,5 @@ function Footer() {
     </div>
   );
 }
+
 export default Footer;
