@@ -15,13 +15,23 @@ function Footer() {
       message: '',
     });
     const form = useRef();
+    const [emailError, setEmailError] = useState(""); // State to hold validation error
 
     const sendEmail = (e) => {
       e.preventDefault();
+        // const declaration = regex that validates email format
+        const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+
+        // email format checked with if statement
+        if (!emailRegex.test(formData.email)) {
+          setEmailError("Invalid email format");
+          return; // Prevent form submission if email is invalid
+        }
+        // if true, email is sent by using process.env to protect sensitive data.
       emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_USER_ID)
         .then((result) => {
           console.log('Email sent successfully:', result);
-          // Add logic for displaying a success message to the user
+          alert("Email sent!");
         })
         .catch((error) => {
           console.error('Email sending failed:', error);
@@ -57,6 +67,8 @@ function Footer() {
               <Form.Label>Email address</Form.Label>
               <Form.Control type="text" placeholder="name@example.com" name="email" value={formData.email} onChange={handleChange}/>
             </Form.Group>
+            {/* emailError render */}
+            {emailError && <p style={{ color: "red" }}>{emailError}</p>}
             <Form.Group
               className="mb-3"
               controlId="exampleForm.ControlTextarea1"
