@@ -60,6 +60,9 @@ function Footer() {
       if (name === "message") {
         setMessageLength(value.length);
       }
+      // clears error warning
+      setEmailError("");
+
       setFormData({
         ...formData,
         [name]: value,
