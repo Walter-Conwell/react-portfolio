@@ -1,12 +1,14 @@
 import React from "react";
 import { Card } from "react-bootstrap";
 
+// card layout for mobile responsiveness and tidy-ness
 const Project = ({ imageUrl, title, description, projectUrl }) => {
     return (
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           <br />
             <section style={{ margin: "10px", minwidth: "180px" }}>
         <Card>
+          {/* all project, and their links are listed below, as well as a thumbnail photo! */}
         <Card.Img variant="top" src={"https://github.com/Walter-Conwell/codeQuizGame/raw/main/Develop/assets/images/image-1.png"} />
         <Card.Body>
           <Card.Title>{"Codenundrum"}</Card.Title>
@@ -69,7 +71,7 @@ const Project = ({ imageUrl, title, description, projectUrl }) => {
           <a href={"https://github.com/Walter-Conwell/jsPasswordGenerator"} className="btn btn-primary" target="_blank" rel="noopener noreferrer">
             View Project
           </a>
-          <a href={"https://github.com/Walter-Conwell/svgLogoMaker"} className="btn btn-primary" target="_blank" rel="noopener noreferrer" >Live Link</a>
+          <a href={"https://walter-conwell.github.io/jsPasswordGenerator/"} className="btn btn-primary" target="_blank" rel="noopener noreferrer" >Live Link</a>
         </Card.Body>
       </Card>
             </section>

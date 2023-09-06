@@ -1,3 +1,5 @@
+/* much of the styling in this app is done with the inline styling capabilities of bootstrap/react-bootstrap.
+The styling here within the app.css is more for elements that are common among all components, and mobile responsiveness!  */
 .App {
   text-align: center;
   min-width: auto;

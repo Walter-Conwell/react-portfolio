@@ -16,6 +16,7 @@ function Footer() {
     });
     const form = useRef();
     const [emailError, setEmailError] = useState(""); // State to hold validation error
+    const [messageLength, setMessageLength] = useState(0);
 
     const sendEmail = (e) => {
       e.preventDefault();
@@ -27,6 +28,13 @@ function Footer() {
           setEmailError("Invalid email format");
           return; // Prevent form submission if email is invalid
         }
+
+        if (messageLength > 200) {
+          // error message for message input field.
+          setEmailError("Message exceeds 200 characters");
+          return; 
+        }
+
         // if true, email is sent by using process.env to protect sensitive data.
       emailjs.sendForm(process.env.REACT_APP_EMAILJS_SERVICE_ID, process.env.REACT_APP_EMAILJS_TEMPLATE_ID, form.current, process.env.REACT_APP_EMAILJS_USER_ID)
         .then((result) => {
@@ -41,6 +49,9 @@ function Footer() {
   
     const handleChange = (e) => {
       const { name, value } = e.target;
+      if (name === "message") {
+        setMessageLength(value.length);
+      }
       setFormData({
         ...formData,
         [name]: value,
