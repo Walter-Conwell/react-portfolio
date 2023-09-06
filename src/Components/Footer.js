@@ -20,8 +20,16 @@ function Footer() {
 
     const sendEmail = (e) => {
       e.preventDefault();
+      // name regex to validate if input is a valid name - non-empty string with no numbers
+      const nameRegex = /^[A-Za-z]+$/;
         // const declaration = regex that validates email format
         const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+
+        // name validation
+        if (!nameRegex.test(formData.name)) {
+          setEmailError("Invalid name format");
+          return;
+        }
 
         // email format checked with if statement
         if (!emailRegex.test(formData.email)) {
@@ -65,7 +73,7 @@ function Footer() {
         <Container className="contactInfo" style={{ display: "block", width:"auto" }} >
           <br />
           <p className="email" style={{ fontSize: "16px", display: "inline-flex", justifyContent: "center", margin: "0", textAlign: "center" }}>
-            Email Me Here: walterdanteconwelljr@gmail.com - Or enter your info into the below fields, and I will reach out to you!
+            Email Me Directly Here: walterdanteconwelljr@gmail.com for more sensitive topics - Or complete this contact form for a quick inquiry! EmailJS was used here, keeping your data secure! Upon recieving these emails, I will reach out ASAP! Thanks for your patience!
           </p>
 
         <Container>

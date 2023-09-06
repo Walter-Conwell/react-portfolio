@@ -25,8 +25,8 @@ my workflow. This mindset has helped me learn such technologies as
 node.js, MySQL, MongoDB, and React. Communication, focus, flexibility,
 and support are the things I will provide to any team. In order to
 get better at the things we love, it takes time and effort. I am very excited for the future
-opportunities and experiences that await! Check out the Portfolio
-section of this app! Or if you would like to reach out, go to the
+opportunities that await! Click on the indivdual navigation items in the navbar to go to see their component dynamically render in the viewport! Check out the Portfolio
+section of this app! If you would like to reach out about any business inquiries or general questions - go to the
 Contact section in the navbar!
         </p>
       </section>
