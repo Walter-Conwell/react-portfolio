@@ -48,6 +48,13 @@ function Footer() {
         .then((result) => {
           console.log('Email sent successfully:', result);
           alert("Email sent!");
+
+          // input fields cleared
+          setFormData({
+            name: '',
+            email: '',
+            message: '',
+          });
         })
         .catch((error) => {
           console.error('Email sending failed:', error);
@@ -76,7 +83,7 @@ function Footer() {
         <Container className="contactInfo" style={{ display: "block", width:"auto" }} >
           <br />
           <p className="email" style={{ fontSize: "16px", display: "inline-flex", justifyContent: "center", margin: "0", textAlign: "center" }}>
-            Email Me Directly Here: walterdanteconwelljr@gmail.com for more sensitive topics - Or complete this contact form for a quick inquiry! EmailJS was used here, keeping your data secure! Upon recieving these emails, I will reach out ASAP! Thanks for your patience!
+          For more sensitive topics, email me directly here: walterdanteconwelljr@gmail.com - Or complete this contact form for a quick inquiry! EmailJS was used here, keeping your data secure!
           </p>
 
         <Container>

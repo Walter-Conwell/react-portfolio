@@ -18,15 +18,10 @@ function About() {
       <br />
         <p id="text">
         Hello! My name is Walter Conwell Jr. I'm a graduate of the EdX Full Stack 
-Web Development Coding Bootcamp at the University of Denver. I love
-building with React, and I persistently learn new technologies/tools
-to keep my skills sharp. Communication and being open to new solutions is crucial to 
-my workflow. This mindset has helped me learn such technologies as
-node.js, MySQL, MongoDB, and React. Communication, focus, flexibility,
-and support are the things I will provide to any team. In order to
-get better at the things we love, it takes time and effort. I am very excited for the future
-opportunities that await! Click on the indivdual navigation items in the navbar to go to see their component dynamically render in the viewport! Check out the Portfolio
-section of this app! If you would like to reach out about any business inquiries or general questions - go to the
+Web Development Coding Bootcamp at the University of Denver. My strenghts are in React, React-Bootstrap, and node.js. In my learned experience - communication and being open to new solutions is crucial to being an effective programmer. This mindset has helped me learn such technologies: node.js, MySQL, MongoDB, and React. Communication, compassion, perseverance,
+and support is what I will provide to any team. I am very excited for the future
+opportunities that await! Click on the indivdual navigation items in the navbar to see their respective component dynamically render in the body element! Download my resume or view it within the Resume section. Check out the Portfolio
+section of this app to see some of my work! And If you would like to reach out about any questions or business inquiries - go to the
 Contact section in the navbar!
         </p>
       </section>
